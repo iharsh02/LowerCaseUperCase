@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Textform from './components/Textform';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar title = "Senpai Moon"  aboutTxt = "About me" Search ="Search"/>
+      {/* <Navbar/> */}
+
+      
+      <Textform txt ="Enter the Text " btn ="convert to upper case" btn2 ="convert to lower case" btn3 ="Find and Replace"/>
+      
+    </>
+
   );
 }
 
 export default App;
+
+
+
